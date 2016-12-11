@@ -1,0 +1,15 @@
+{
+  	"name": "zekros New Tab Page",
+  	"version": "0.0.1",
+  	"manifest_version": 2,
+  	"description": "Description ...",
+	
+	"chrome_url_overrides": {
+		"newtab": "html/newtab.html"
+	},
+	
+	"browser_action": {
+		"default_popup": "html/popup.html"
+	}
+	
+}
