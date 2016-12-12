@@ -12,10 +12,16 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+	
+    document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
+	document.getElementById("timeTitle").innerHTML = h + ":" + m + ":" + s + " - New Tab";
+	
     t = setTimeout(function () {
         startTime()
     }, 500);
 }
 
 startTime();
+
+
+

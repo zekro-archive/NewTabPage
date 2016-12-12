@@ -1,18 +1,29 @@
 <head>
-	<title>New Tab</title>
+	<title id="timeTitle">New Tab</title>
 </head>
 
 <body>
 
 	<div id="bg">
 		<img id="bgimage"/>
-		<div id="time"></div>
+		<a class="filter"></a>
+		<div id="outertime"><p id="time" class="time"></p></div>
+		
+		<center>
+			<div class="iconcontainer">
+				<a href="http://twitter.com" class="icon" style="margin-right: 10px;"><img src="../icons/twitter.png" width="30"/></a>
+				<a href="https://www.youtube.com/feed/subscriptions" class="icon" ><img src="../icons/youtube.png" width="30"/></a>
+			</div>
+		</center>
+		
 	</div>
 	
 </body>
 
 
-<script src="libs/jquery/jquery.min.js"></script>
+<script src="/libs/jquery/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/stylesheet_newtab.css">
+
 <script src="/js/time.js"></script>
 <script src="/js/bg.js"></script>
-<link rel="stylesheet" href="/css/stylesheet_newtab.css">
+<script src="/js/former.js"></script>

@@ -10,6 +10,6 @@ if (document.cookie != null) {
 function save() {
 	alert("Settings saved!");
 	
-	document.cookie = "randnumb=" + randnumb.value;
+	document.cookie = "randnumb=" + randnumb.value + ";expires=Fri, 31 Dec 9999 23:59:59 GMT";
 	
 }
