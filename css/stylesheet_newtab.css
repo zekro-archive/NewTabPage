@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100');
 
+img{
+  	user-drag: none;
+  	user-select: none;
+  	-moz-user-select: none;
+  	-webkit-user-drag: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+}
+
+p, a {
+  	user-drag: none;
+  	user-select: none;
+  	-moz-user-select: none;
+  	-webkit-user-drag: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+	cursor: default;
+}
+
 .time {
 	font-family: 'Roboto', sans-serif;
 	font-size: 100px;
@@ -40,6 +59,7 @@
 
 .icon {
 	opacity: .7;
+	cursor: pointer;
 	
 	transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;

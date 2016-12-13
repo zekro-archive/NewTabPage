@@ -1,3 +1,5 @@
+sp = cfg.timerSeperator;
+
 function checkTime(i) {
     if (i < 10) {
         i = "0" + i;
@@ -13,8 +15,13 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
 	
-    document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
-	document.getElementById("timeTitle").innerHTML = h + ":" + m + ":" + s + " - New Tab";
+	if (cfg.timerShowSeconds) {
+		document.getElementById("time").innerHTML = h + sp + m + sp + s;
+		document.getElementById("timeTitle").innerHTML = h + sp + m + sp + s + " - New Tab";
+	} else {
+		document.getElementById("time").innerHTML = h + sp + m;
+		document.getElementById("timeTitle").innerHTML = h + sp + m + " - New Tab";
+	}
 	
     t = setTimeout(function () {
         startTime()
