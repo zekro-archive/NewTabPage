@@ -1,4 +1,4 @@
-sp = cfg.timerSeperator;
+sp = ":";
 
 function checkTime(i) {
     if (i < 10) {
@@ -15,7 +15,7 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
 	
-	if (cfg.timerShowSeconds) {
+	if (localStorage["timerSeconds"] == "true") {
 		document.getElementById("time").innerHTML = h + sp + m + sp + s;
 		document.getElementById("timeTitle").innerHTML = h + sp + m + sp + s + " - New Tab";
 	} else {

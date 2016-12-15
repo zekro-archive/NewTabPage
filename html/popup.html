@@ -1,17 +1,23 @@
 <script src="../libs/jquery/jquery.min.js"></script>
 <link rel="stylesheet" href="../css/stylesheet_newtab.css">
 
-<p class="p_text" style="font-size: 16px;">SETTINGS</p>
+<body>
+	
+	<p class="p_text" style="font-size: 16px;">SETTINGS</p>
+	
+	<form>
+		Number Of Pictures: <input id="numbfield" type="number"><br><br>
+		Background Opacity: <input id="bgopacity" type="range"><br><br>
+		Timer Font Size: <input id="fontSize" type="number"><br><br>
+		Timer Font Color: <input id="fontColor" type="color"><br><br>
+		Timer Show Seconds: <input id="timerSeconds" type="checkbox"><br><br>
+		Border Thickness: <input id="borderThickness" type="number"><br><br>
+		Border Color: <input id="borderColor" type="color"><br><br>
+	</form>
 
-<form>
-  Number Of Pictures: <input id="numbfield" type="number" name="picnumb"><br>
-</form>
-
-<button id="btSave">Save</button>
-
-<br/>
-<br/>
-<a id="btConfig" style="cursor: pointer; color: blue; text-decoration: underline;">Open config.js</a>
+	<button id="btSave">Save</button>
+	
+</body>
 
 <script src="/js/config.js"></script>
 <script src="../js/popup.js"></script>

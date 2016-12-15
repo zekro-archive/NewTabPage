@@ -1,7 +1,7 @@
 var img = document.getElementById("bgimage");
 
-if (document.cookie.split('randnumb=')[1] != null) {
-	var maxRandValue = document.cookie.split('=')[1];
+if (localStorage.randnumb != null) {
+	var maxRandValue = localStorage.randnumb;
 } else {
 	var maxRandValue = 1;
 }

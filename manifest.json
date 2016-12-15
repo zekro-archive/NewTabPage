@@ -12,6 +12,6 @@
 		"default_popup": "html/popup.html"
 	},
 	
-	"options_page": "html/popup.html"
+	"options_page": "js/config.js"
 	
 }
